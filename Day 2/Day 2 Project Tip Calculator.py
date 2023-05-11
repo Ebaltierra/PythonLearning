@@ -8,7 +8,7 @@ print("\nWhat tip would you like to provide?"
 tip=int(input("\n"))
 bill_2= (bill/people)
 tip_2= (1 + tip/100)
-total= (bill_2*tip_2*1.0825)
+total= round(bill_2*tip_2, 2)
 print("\nEach person should pay $" + str(total))
 
 
