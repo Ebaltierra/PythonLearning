@@ -1,0 +1,17 @@
+print("\nWhat is your height in cm?")
+height=int(input("\n: "))
+print("\nDo you have any preexisiting healthy conditions that would prohibit you from riding??")
+while True:
+    heart_conditions=input("\n: ")
+    if heart_conditions==str("yes"):    
+        print("You may not ride")
+        quit()
+        break
+    if heart_conditions==str("no"): 
+        print("You are free to ride ")
+        break
+    else: 
+        print("That is an invalid response, try again!")
+if height>=120: 
+    print("You may buy a ticket!")
+else: print("You may not buy a ticket.")
