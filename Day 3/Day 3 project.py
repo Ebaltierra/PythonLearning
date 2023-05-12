@@ -411,7 +411,7 @@ while True:
     if lucifer_action==str("talk"):
         print("\nLucifer does not deign talk to insects.")
         print("\nFor your insolence he blats you with brimfire"
-              +"\n" +"\n YOU HAVE TAKEN 1 DAMAGE")
+              +"\n" +"\nYOU HAVE TAKEN 1 DAMAGE")
         Health = Health-1
         print(f"\nYou have {Health} health remaining" +line_break
               +"\nWhat do you try now?")
@@ -434,36 +434,36 @@ while True:
                                         Lucifer_Health=Lucifer_Health-3
                                         print(f"\nYou have {Health} health remaining")
                                         print(f"\nLucifer has {Lucifer_Health} health remaining ")
-                                        print(line_break)
-                                        continue
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                                        break
                             elif HasStaff==False:
                                         print("\nYOU HAVE NO STAFF, LUCIFER TOOK ADVANTAGE OF YOUR STUPIDITY AND DEALT TWO DAMAGE")
                                         Health = Health-2
                                         print(f"\nYou have {Health} health remaining")
-                                        print(line_break)
-                                        continue
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                                        break
                         if weaponchoice == str("sword"):
                             if HasSword==True:
                                         print("\nYou use your sword imbued with power to attempt to overpower lucifer dealing 4 damage. ")
                                         Lucifer_Health=Lucifer_Health-4
                                         print(f"\nYou have {Health} health remaining")
                                         print(f"\nLucifer has {Lucifer_Health} health remaining ")
-                                        print(line_break)
-                                        continue
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                                        break
                             elif HasSword==False:
                                         print("\nYOU HAVE NO SWORD, LUCIFER TOOK ADVANTAGE OF YOUR STUPIDITY AND DEALT ONE DAMAGE")
                                         Health = Health-1
                                         print(f"\nYou have {Health} health remaining")
-                                        print(line_break)
-                                        continue
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                                        break
                         if weaponchoice == str("hands"):
                             print("\nYOU ARE FIGHTING SATAN WHAT WILL YOUR HANDS DO? "
                                   + "\nYOU ARE BLASTED WITH THE MIGHT OF HELL"
                                   +"\nYOU TAKE 3 DAMAGE")
                             Health = Health-3
                             print(f"\nYou have {Health} health remaining")
-                            print(line_break)
-                            continue
+                            print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                            break
                         if weaponchoice==str("dagger"):
                             if HasDagger== True:
                                         print("\nYou use your Dagger imbued with the Crimson Cerulea to stab lucifer.")
@@ -473,15 +473,15 @@ while True:
                                         print(f"\nYou have {Health} health remaining")
                                         print(f"\nLucifer has {Lucifer_Health} health remaining ")
                                         print("\n"+ f"\nYour dagger breaks")
-                                        print(line_break)
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
                                         HasDagger=False
-                                        continue
+                                        break
                             elif HasDagger==False:
                                         print("\nYOU HAVE NO DAGGER, LUCIFER BLASTS YOU WITH FIRE DEALING THREE DAMAGE")
                                         Health = Health-3
                                         print(f"\nYou have {Health} health remaining")
-                                        print(line_break)
-                                        continue
+                                        print("\n" + "\nWhat do you do?" + "\n" + "\ntalk, attack, call for friends, or run?" + line_break)
+                                        break
                         else:
                             if lucy_break2==True:
                                 break
@@ -489,7 +489,7 @@ while True:
     if lucifer_action==str("call for friends"):
         if beggar_friend==True:
             print("\nThe beggar you took pity on comes to your aid" )
-            print("\n" +"\n He uses the last of his strength to blast lucifer with a holy light" + "\n He deals five damage ") 
+            print("\n" +"\n He uses the last of his strength to blast lucifer with a holy light" + "\nHe deals five damage ") 
             Lucifer_Health=Lucifer_Health-5
             print(f"\nLucifer has {Lucifer_Health} health remaining ")
             continue
@@ -497,7 +497,7 @@ while True:
             print("\nYOU HAVE NO FRIENDS IN THIS HELLSCAPE" + line_break)
             continue
     if lucifer_action==str("run"):
-        print("\nLUCIFER DOESN'T TAKE KINDLY TO WIMPS" + "\n LUCIFER DEALS 2 DAMAGE TO YOU")
+        print("\nLUCIFER DOESN'T TAKE KINDLY TO WIMPS" + "\nLUCIFER DEALS 2 DAMAGE TO YOU")
         Health=Health-2
         print(f"\nYou have {Health} health remaining" + line_break)
         continue
