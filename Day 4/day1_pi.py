@@ -99,6 +99,7 @@ draw="\n It's a draw"
 #Write your code below this line 👇
 print("What do you choose?"+
       '\nType 0 for Rock, 1 for Paper, or 2 for Scissors')
+choice_pic=("Null")
 choice = int(input("\n"))
 AI_choice = random.randint(0,2)
 if choice==0: 
@@ -118,6 +119,8 @@ elif AI_choice==2:
 print(f"You choose\n\n\n\n{choice_pic}")
 print(f"AI choose\n\n\n\n{AI_choice_pic}")
 
+if choice>=3 or choice<0:
+    print("Invalid choice, you lose")
 if choice==0:
     if AI_choice==0:
         print(draw)
